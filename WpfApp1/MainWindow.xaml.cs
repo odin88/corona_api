@@ -32,7 +32,7 @@ namespace WpfApp1
             var client = new RestClient("https://api.collectapi.com/corona/countriesData");
             client.UseNewtonsoftJson();
             var request = new RestRequest(Method.GET);
-            request.AddHeader("authorization", "apikey 0KpVbgSHTnb6GtZ3bhoRtH:2qUGmVyPckfEmaW1VKhYKv");
+            request.AddHeader("authorization", "apikey replaceme");
             request.AddHeader("content-type", "application/json");
 
             var results = client.Execute<CountriesDataPOCO.Rootobject>(request);
